@@ -67,22 +67,7 @@ int choice;
         x_o_game.run();
     }
     }
-    else if(num==4){
-        cout << "1-Play with computer\n2-play with another player \n ";
-         cout << "Enter the number that you want to play with :\n";
-        cin >> choice;
-        if (choice == 1){
-        players[1] = new RandomPlayer('o', 3);
-        GameManager x_o_game(new Connect4_Board() , players);
-        x_o_game.run();
-        }
-            
-        else if(choice == 2){
-            players[1] = new Player(2, 'o');
-            GameManager x_o_game(new Connect4_Board() , players);
-           x_o_game.run();
-    }
-    }
+   
     system("pause");
 
   
